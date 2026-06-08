@@ -11,6 +11,7 @@ export default function SearchControls({ search, setSearch, selectedType, setSel
                 />
             </div>
 
+
             <select
                 value={selectedType}
                 onChange={(e) => setSelectedType(e.target.value)}
@@ -20,6 +21,7 @@ export default function SearchControls({ search, setSearch, selectedType, setSel
                 <option value="movie">Movies 🎥</option>
                 <option value="anime">Anime 🌌</option>
             </select>
+
 
             <button
                 onClick={onSearch}
