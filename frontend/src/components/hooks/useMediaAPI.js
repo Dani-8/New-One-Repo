@@ -19,7 +19,7 @@ export default function useMediaAPI() {
 
     useEffect(() => {
         const pingBackend = async () => {
-            setLoading(true);
+            setLoading(true)
             try {
                 const response = await fetch(`${API_BASE_URL}/api/media`);
                 if (!response.ok) throw new Error('API unstable');
@@ -34,13 +34,15 @@ export default function useMediaAPI() {
             } finally {
                 setLoading(false);
             }
-        };
+        }
+
         pingBackend();
     }, [API_BASE_URL]);
 
 
     const handleSearch = async () => {
-        setLoading(true);
+        setLoading(true)
+        
         try {
             const response = await fetch(`${API_BASE_URL}/api/media?search=${encodeURIComponent(search)}&type=${selectedType}`);
             if (!response.ok) throw new Error('API failed');
