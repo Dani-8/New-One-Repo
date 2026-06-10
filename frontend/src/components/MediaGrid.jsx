@@ -6,7 +6,7 @@ export default function MediaGrid({ mediaList, watchlist, onToggleWatchlist, onS
             <div className="text-center py-16">
                 <p className="text-slate-500 text-lg">No media found matching those parameters.</p>
             </div>
-        );
+        )
     }
 
     return (

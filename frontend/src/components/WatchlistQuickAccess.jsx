@@ -18,5 +18,5 @@ export default function WatchlistQuickAccess({ watchlist, onToggle }) {
                 ))}
             </div>
         </div>
-    );
+    )
 }

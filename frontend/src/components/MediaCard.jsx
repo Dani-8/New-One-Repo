@@ -44,5 +44,5 @@ export default function MediaCard({ item, isSaved, onToggleWatchlist, onSelectDe
                 </div>
             </div>
         </div>
-    );
+    )
 }

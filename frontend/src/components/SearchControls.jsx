@@ -30,5 +30,5 @@ export default function SearchControls({ search, setSearch, selectedType, setSel
                 Search Now
             </button>
         </div>
-    );
+    )
 }
