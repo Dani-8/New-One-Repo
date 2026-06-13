@@ -1,6 +1,7 @@
 const request = require("supertest")
 const app = require("./server")
 
+
 // Group tests together using "describe"
 describe("API Tests", () => {
     // Test no.1: Test the root endpoint
@@ -20,5 +21,3 @@ describe("API Tests", () => {
         expect(res.body.length).toBeGreaterThan(0)
     })
 })
-
-
