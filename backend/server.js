@@ -3,6 +3,7 @@ const app = express()
 app.use(express.json())
 
 const PORT = process.env.PORT || 5000
+// =====================================
 
 // Mock database of users
 const USERS_DATABASE = [
